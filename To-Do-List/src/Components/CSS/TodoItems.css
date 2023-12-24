@@ -1,0 +1,42 @@
+.todoitems {
+  width: 98%;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 3px;
+  border-bottom: 1px solid #ddd;
+  align-items: center;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.todoitems-container {
+  display: flex;
+  align-items: center;
+}
+
+.todoitems-text {
+  padding-left: 8px;
+  color: #000;
+  font-size: larger;
+  font-weight: lighter;
+}
+
+.todoitems-cross-icon {
+  cursor: pointer;
+}
+
+.todoitems-container img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.todoitems-container img.completed {
+  filter: grayscale(100%);
+}
+
+.line-through {
+  text-decoration: line-through;
+  text-decoration-thickness: 3px;
+  color: rgb(246, 85, 5);
+}
