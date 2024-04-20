@@ -1,0 +1,19 @@
+<div class="grid" (mousedown)="onMouseDown()" (mouseup)="onMouseUp()">
+  <div *ngFor="let row of initialGrid" class="grid-row">
+    <div *ngFor="let node of row" class="grid-node">
+      <app-node
+        [ngClass]="{ wall: node.wall === true }"
+        [row]="node.row"
+        [col]="node.col"
+        [entry]="node.entry"
+        [target]="node.target"
+        [wall]="node.wall"
+        (mousedown)="node.mouseDown = true"
+        (mouseup)="node.mouseDown = false"
+        (mouseleave)="node.mouseDown = false"
+        (mousemove)="updateGrid(node.row, node.col)"
+        (click)="changeColor(node.row, node.col)"
+      ></app-node>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0;
+  margin-left: 1px;
+}
+
+.grid-node {
+  margin: auto auto;
+  height: 27px;
+  width: 27px;
+  margin-bottom: 2px;
+  margin-left: 4px;
+}

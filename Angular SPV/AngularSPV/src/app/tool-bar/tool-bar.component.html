@@ -1,0 +1,85 @@
+<div class="toolbar">
+  <ul>
+    <li>
+      <button class="refresh-button" (click)="onRefreshPage()">
+        PathFinding Visualizer
+      </button>
+    </li>
+    <li>
+      <select name="Algorithms" id="Algorithms">
+        <option value="" disabled>Algorithms</option>
+        <option>Dijkstra</option>
+        <option>BFS</option>
+        <option>DFS</option>
+      </select>
+    </li>
+    <li>
+      <select name="Patterns" id="Patterns">
+        <option value="" disabled>Patterns</option>
+        <option>Maze1</option>
+        <option>Maze2</option>
+        <option>Maze3</option>
+      </select>
+    </li>
+    <li>
+      <button class="list-buttons" (click)="onClearGrid()">Clear Grid</button>
+    </li>
+    <li>
+      <button class="list-buttons start" (click)="onStart()">Start</button>
+    </li>
+    <li>
+      <div class="togglestuff">
+        <label class="texts">Place Entry Point</label>
+        <div class="background_box">
+          <div
+            class="toggle_box"
+            [ngStyle]="{
+              'background-color': targetPointChanged === false ? '#000' : '#fff'
+            }"
+          >
+            <div
+              class="circle"
+              [ngClass]="{ checked: entryPointChanged !== false }"
+              [ngStyle]="{
+                'background-color':
+                  entryPointChanged === false ? '#fff' : '#000'
+              }"
+            ></div>
+          </div>
+          <input
+            type="checkbox"
+            id="checkbox1"
+            (change)="entryPointChanged = !entryPointChanged"
+          />
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="togglestuff">
+        <label class="texts">Place Target Point</label>
+        <div class="background_box">
+          <div
+            class="toggle_box"
+            [ngStyle]="{
+              'background-color': targetPointChanged === false ? '#000' : '#fff'
+            }"
+          >
+            <div
+              class="circle"
+              [ngClass]="{ checked: targetPointChanged !== false }"
+              [ngStyle]="{
+                'background-color':
+                  targetPointChanged === false ? '#fff' : '#000'
+              }"
+            ></div>
+          </div>
+          <input
+            type="checkbox"
+            id="checkbox2"
+            (change)="targetPointChanged = !targetPointChanged"
+          />
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>

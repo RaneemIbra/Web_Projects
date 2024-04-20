@@ -1,0 +1,9 @@
+<div
+  class="node {{ row }} {{ col }}"
+  id="node-{{ row }}-{{ col }}"
+  [ngClass]="{
+    wall: this.wall === true && this.entry !== true && this.target !== true,
+    entry: this.entry === true && this.wall !== true && this.target !== true,
+    target: this.target === true && this.wall !== true && this.entry !== true
+  }"
+></div>
