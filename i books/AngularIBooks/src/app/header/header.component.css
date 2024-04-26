@@ -59,7 +59,7 @@
 
 .search-bar:focus::placeholder {
   color: transparent;
-  margin-bottom: 5px;
+  margin-bottom: 7px;
 }
 
 .search-bar:focus {
@@ -84,7 +84,7 @@
   height: 5vh;
   width: 28vw;
   border-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb) 1;
-  border: 3px solid;
+  border: 3px solid white;
   overflow: hidden;
   padding-top: 0;
   align-items: center;
@@ -93,7 +93,7 @@
 }
 
 .search-box {
-  border: solid black;
+  border: solid white;
   border-right: 2px;
   border-top: 1px;
   border-bottom: 1px;

@@ -1,0 +1,85 @@
+.background {
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  background-image: url("https://wallpapercave.com/wp/wp11786676.png");
+}
+
+.headerText {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  color: white;
+  margin-top: 240px;
+}
+
+.title {
+  font-size: 3em;
+  margin-bottom: 1vh;
+}
+
+.comments {
+  margin-top: 3vh;
+}
+
+.Comment {
+  border: 3px solid;
+  margin-top: 3vh;
+  height: 15vh;
+  width: 40vw;
+  margin-bottom: 1vh;
+}
+
+.parag {
+  color: red;
+}
+
+.inputdiv {
+  margin: 0;
+}
+
+.inputComment {
+  color: white;
+  background-color: transparent;
+  margin-top: 2vh;
+  height: 6vh;
+  width: 28vw;
+  border: solid white;
+  font-size: 1.5em;
+  padding-top: 10px;
+  padding-left: 5px;
+}
+
+.inputComment:focus {
+  border: solid white;
+  outline: none;
+  font-size: 1.5em;
+}
+
+.inputComment::placeholder {
+  color: white;
+  font-size: 1.5em;
+}
+
+.Submit {
+  background-color: transparent;
+  color: white;
+  margin-left: 2vw;
+  border: solid white 2px;
+  height: 5vh;
+  width: 5vw;
+  cursor: pointer;
+}
+
+.Submit:active {
+  background-color: white;
+  color: black;
+}
+
+.inputComment:focus::placeholder {
+  color: transparent;
+  margin-bottom: 7px;
+}
