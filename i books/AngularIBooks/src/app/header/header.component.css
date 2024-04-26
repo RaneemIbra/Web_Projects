@@ -39,17 +39,18 @@
 
 .search-bar {
   height: 4vh;
-  width: 25vw;
+  width: 24vw;
   border: none;
   background-color: transparent;
   margin-top: 0;
   padding-bottom: 0;
-  padding-top: 2px;
+  padding-top: 4px;
+  padding-left: 10px;
 }
 
 .search-bar::placeholder {
   font-size: x-large;
-  margin-top: 0;
+  margin-top: 3px;
   margin-bottom: 5px;
   font-family: sans-serif;
   font-weight: bolder;
