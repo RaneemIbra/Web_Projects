@@ -18,6 +18,7 @@
             type="text"
             placeholder="Comment..."
             class="inputComment"
+            (keydown.enter)="onClick()"
           />
           <button class="Submit" (click)="onClick()">Submit</button>
         </div>

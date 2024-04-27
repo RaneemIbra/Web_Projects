@@ -1,0 +1,140 @@
+.background {
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  background-image: url("https://wallpapercave.com/wp/wp11786676.png");
+}
+
+.Trinkets {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 20px;
+  height: auto;
+  overflow: hidden;
+  margin-top: 5vh;
+}
+
+.trinket {
+  width: 451px;
+  height: 713px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.trinket img {
+  width: 100%;
+  height: 92%;
+  object-fit: cover;
+  display: block;
+}
+
+.crown,
+.pendant {
+  color: white;
+  margin-top: 20px;
+  margin-left: 170px;
+  font-family: sans-serif;
+}
+
+.ring {
+  color: white;
+  margin-top: 20px;
+  margin-left: 200px;
+  font-family: sans-serif;
+}
+
+.books {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 20px;
+  margin: 0 auto;
+  height: auto;
+  overflow: hidden;
+}
+
+.book {
+  width: 451px;
+  height: 713px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.book img {
+  width: 100%;
+  height: 92%;
+  object-fit: cover;
+  display: block;
+}
+
+.book1 {
+  color: white;
+  margin-top: 20px;
+  margin-left: 70px;
+  font-family: sans-serif;
+}
+
+.book2 {
+  color: white;
+  margin-top: 20px;
+  margin-left: 85px;
+  font-family: sans-serif;
+}
+
+.book3 {
+  color: white;
+  margin-top: 20px;
+  margin-left: 110px;
+  font-family: sans-serif;
+}
+
+.title1 {
+  color: white;
+  margin-left: 41vw;
+  margin-top: 18vh;
+}
+
+.title2 {
+  color: white;
+  margin-left: 39vw;
+  margin-top: 18vh;
+  margin-bottom: 5vh;
+}
+
+.title3 {
+  color: white;
+  margin-left: 45vw;
+  margin-top: 18vh;
+  margin-bottom: 5vh;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(-100%);
+  transition: all 2s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
+
+.show:nth-child(1) {
+  transition-delay: 200ms;
+}
+
+.show:nth-child(2) {
+  transition-delay: 400ms;
+}
+
+.show:nth-child(3) {
+  transition-delay: 600ms;
+}

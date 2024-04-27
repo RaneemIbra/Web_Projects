@@ -29,18 +29,13 @@
         <h2>The trilogy of the century, the chapters of wind</h2>
       </div>
       <div class="books">
-        <div class="book hidden">
-          <img src="../../assets/The broken chapter in wind.jpg" />
-          <h2 class="book1">The broken chapter in wind</h2>
-        </div>
-        <div class="book hidden">
-          <img src="../../assets/Back To A Broken Chapter.jpg" />
-          <h2 class="book2">Back to a broken chapter</h2>
-        </div>
-        <div class="book hidden">
-          <img src="../../assets/The Last of All chapters.png" />
-          <h2 class="book3">The last of all chapters</h2>
-        </div>
+        <app-book
+          *ngFor="let book of books2"
+          [imageSrc]="book.imageSrc"
+          [title]="book.title"
+          [cssClass]="book.cssClass"
+          class="hidden"
+        ></app-book>
       </div>
     </div>
   </body>
