@@ -16,11 +16,13 @@ export class ContactUsComponent implements OnInit {
   ngAfterViewInit(): void {
     document.querySelectorAll('.Comment').forEach((e) => e.remove());
     this.comment.forEach((element) => {
-      const targetDiv = document.getElementById('comments');
-      const d = document.createElement('div');
-      d.innerHTML += `<h2 class="name">Annonymous</h2><br /> <p class="parag">${element}</p>`;
-      d.classList.add('Comment');
-      targetDiv?.append(d);
+      if (element !== '') {
+        const targetDiv = document.getElementById('comments');
+        const d = document.createElement('div');
+        d.innerHTML += `<h2 class="name">Annonymous</h2><br /> <p class="parag">${element}</p>`;
+        d.classList.add('Comment');
+        targetDiv?.append(d);
+      }
     });
   }
 
