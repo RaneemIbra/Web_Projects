@@ -1,13 +1,13 @@
 .book {
   width: 451px;
-  height: 713px;
+  height: 720px;
   overflow: hidden;
   border: solid 2px white;
 }
 
 .book img {
   width: 100%;
-  height: 92%;
+  height: 85%;
   object-fit: cover;
   display: block;
 }
@@ -15,62 +15,89 @@
 .Book1-style {
   color: white;
   margin-top: 20px;
-  margin-left: 4vw;
+  margin-left: 2vw;
   font-family: sans-serif;
 }
 
 .Book2-style {
   color: white;
   margin-top: 20px;
-  margin-left: 5vw;
+  margin-left: 3vw;
   font-family: sans-serif;
 }
 
 .Book3-style {
   color: white;
   margin-top: 20px;
-  margin-left: 6vw;
+  margin-left: 4vw;
   font-family: sans-serif;
 }
 
 .Crown-style {
   color: white;
   margin-top: 20px;
-  margin-left: 12vw;
+  margin-left: 10vw;
   font-family: sans-serif;
 }
 
 .Ring-style {
   color: white;
   margin-top: 20px;
-  margin-left: 13vw;
+  margin-left: 10vw;
   font-family: sans-serif;
 }
 
 .Pendant-style {
   color: white;
   margin-top: 20px;
-  margin-left: 11vw;
+  margin-left: 9vw;
   font-family: sans-serif;
 }
 
 .Archangel-style {
   color: white;
   margin-top: 20px;
-  margin-left: 9vw;
+  margin-left: 7vw;
   font-family: sans-serif;
 }
 
 .Philosophy-style {
   color: white;
   margin-top: 20px;
-  margin-left: 3vw;
+  margin-left: 1vw;
   font-family: sans-serif;
 }
 
 .Imposter-style {
   color: white;
   margin-top: 20px;
-  margin-left: 10vw;
+  margin-left: 8vw;
   font-family: sans-serif;
+}
+
+.cartbtn {
+  background: #5e5df0;
+  border-radius: 999px;
+  box-shadow: #5e5df0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji",
+    NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji",
+    EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue",
+    "Noto Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+  margin-left: 10vw;
+  margin-top: 1vh;
 }

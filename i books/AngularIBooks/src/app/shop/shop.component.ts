@@ -1,12 +1,12 @@
-import { Component, AfterViewInit } from '@angular/core';
+import { AfterViewInit, Component } from '@angular/core';
 import { Book } from '../book/book.model';
 
 @Component({
-  selector: 'app-products',
-  templateUrl: './products.component.html',
-  styleUrls: ['./products.component.css'],
+  selector: 'app-shop',
+  templateUrl: './shop.component.html',
+  styleUrls: ['./shop.component.css'],
 })
-export class ProductsComponent implements AfterViewInit {
+export class ShopComponent implements AfterViewInit {
   ngAfterViewInit(): void {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {

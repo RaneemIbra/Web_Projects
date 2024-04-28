@@ -14,16 +14,19 @@ export class HomePageComponent implements AfterViewInit {
       imageSrc: '../../assets/The broken chapter in wind.jpg',
       title: 'The Broken Chapter In Wind',
       cssClass: 'Book1-style',
+      price: '50$',
     },
     {
       imageSrc: '../../assets/Back To A Broken Chapter.jpg',
       title: 'Back To A Broken Chapter',
       cssClass: 'Book2-style',
+      price: '50$',
     },
     {
       imageSrc: '../../assets/The Last of All chapters.png',
       title: 'The Last Of All Chapters',
       cssClass: 'Book3-style',
+      price: '50$',
     },
   ];
 

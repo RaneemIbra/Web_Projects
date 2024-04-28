@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Products</title>
+    <title>Shop</title>
   </head>
   <body>
     <div class="background">
@@ -24,8 +24,8 @@
           *ngFor="let book of books2"
           [imageSrc]="book.imageSrc"
           [title]="book.title"
-          [cssClass]="book.cssClass"
           [price]="book.price"
+          [cssClass]="book.cssClass"
           class="hidden"
         ></app-book>
       </div>

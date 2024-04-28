@@ -12,6 +12,7 @@ export class BookPreviewComponent {
       imageSrc: '../../assets/The broken chapter in wind.jpg',
       title: 'The Broken Chapter In Wind',
       cssClass: 'Book1-style',
+      price: '50$',
     },
   ];
 }

@@ -9,4 +9,5 @@ export class BookComponent {
   @Input() imageSrc: string;
   @Input() title: string;
   @Input() cssClass: string;
+  @Input() price: string;
 }
