@@ -7,9 +7,9 @@
   </head>
   <body>
     <div class="book">
-      <img [src]="imageSrc" />
+      <img [src]="imageSrc" (click)="onImageClick()" />
       <h2 [ngClass]="cssClass">{{ title }} : {{ price }}</h2>
-      <button class="cartbtn">Add To Cart</button>
+      <button class="cartbtn" (click)="onAddToCart($event)">Add To Cart</button>
     </div>
   </body>
 </html>

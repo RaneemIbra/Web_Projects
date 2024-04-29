@@ -6,40 +6,6 @@
     <title>Shop</title>
   </head>
   <body>
-    <div class="background">
-      <h1 class="title1 hidden">The Trinket Trilogy</h1>
-      <div class="Trinkets">
-        <app-book
-          *ngFor="let book of books1"
-          [imageSrc]="book.imageSrc"
-          [title]="book.title"
-          [price]="book.price"
-          [cssClass]="book.cssClass"
-          class="hidden"
-        ></app-book>
-      </div>
-      <h1 class="title2 hidden">The Chpaters Of Wind</h1>
-      <div class="books">
-        <app-book
-          *ngFor="let book of books2"
-          [imageSrc]="book.imageSrc"
-          [title]="book.title"
-          [price]="book.price"
-          [cssClass]="book.cssClass"
-          class="hidden"
-        ></app-book>
-      </div>
-      <h1 class="title3 hidden">Philosophy</h1>
-      <div class="books">
-        <app-book
-          *ngFor="let book of books3"
-          [imageSrc]="book.imageSrc"
-          [title]="book.title"
-          [price]="book.price"
-          [cssClass]="book.cssClass"
-          class="hidden"
-        ></app-book>
-      </div>
-    </div>
+    <div class="background"></div>
   </body>
 </html>

@@ -3,4 +3,5 @@ export interface Book {
   title: string;
   cssClass: string;
   price: string;
+  preview: string;
 }

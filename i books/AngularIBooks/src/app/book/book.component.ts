@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-book',
@@ -10,4 +10,16 @@ export class BookComponent {
   @Input() title: string;
   @Input() cssClass: string;
   @Input() price: string;
+  @Input() preview: string;
+  @Output() imageClick = new EventEmitter<void>();
+  @Output() addToCart = new EventEmitter<void>();
+
+  onImageClick(): void {
+    this.imageClick.emit();
+  }
+
+  onAddToCart(event: MouseEvent): void {
+    event.stopPropagation();
+    this.addToCart.emit();
+  }
 }

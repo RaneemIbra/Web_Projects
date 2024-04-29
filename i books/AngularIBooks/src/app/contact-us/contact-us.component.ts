@@ -7,7 +7,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
   encapsulation: ViewEncapsulation.None,
 })
 export class ContactUsComponent implements OnInit {
-  comment: string[] = ['hello'];
+  comment: string[] = [];
 
   constructor() {}
 

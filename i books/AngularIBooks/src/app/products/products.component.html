@@ -16,6 +16,8 @@
           [price]="book.price"
           [cssClass]="book.cssClass"
           class="hidden"
+          (imageClick)="navigateToPreview(book)"
+          (addToCart)="handleAddToCart(book)"
         ></app-book>
       </div>
       <h1 class="title2 hidden">The Chpaters Of Wind</h1>
@@ -27,7 +29,10 @@
           [cssClass]="book.cssClass"
           [price]="book.price"
           class="hidden"
-        ></app-book>
+          (imageClick)="navigateToPreview(book)"
+          (addToCart)="handleAddToCart(book)"
+        >
+        </app-book>
       </div>
       <h1 class="title3 hidden">Philosophy</h1>
       <div class="books">
@@ -38,6 +43,8 @@
           [price]="book.price"
           [cssClass]="book.cssClass"
           class="hidden"
+          (imageClick)="navigateToPreview(book)"
+          (addToCart)="handleAddToCart(book)"
         ></app-book>
       </div>
     </div>

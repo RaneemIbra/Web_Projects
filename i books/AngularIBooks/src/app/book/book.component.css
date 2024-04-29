@@ -10,6 +10,7 @@
   height: 85%;
   object-fit: cover;
   display: block;
+  cursor: pointer;
 }
 
 .Book1-style {

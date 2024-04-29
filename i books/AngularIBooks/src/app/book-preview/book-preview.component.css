@@ -14,8 +14,19 @@
   display: flex;
 }
 
-.box {
-  border: solid white 2px;
+.box1,
+.box2 {
+  border: solid white 3px;
   margin-left: 30px;
   width: 30vw;
+  padding: 8px;
+}
+
+.textPrev {
+  color: white;
+  font-size: 1.8em;
+}
+
+.Preview .book img {
+  cursor: default;
 }

@@ -36,6 +36,8 @@
           [price]="book.price"
           [cssClass]="book.cssClass"
           class="hidden"
+          (imageClick)="navigateToPreview(book)"
+          (addToCart)="handleAddToCart(book)"
         ></app-book>
       </div>
     </div>

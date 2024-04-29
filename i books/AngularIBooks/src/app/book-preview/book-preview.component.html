@@ -9,15 +9,18 @@
     <div class="background">
       <div class="Preview">
         <app-book
-          *ngFor="let book of books1"
+          *ngIf="book"
           [imageSrc]="book.imageSrc"
           [title]="book.title"
           [price]="book.price"
           [cssClass]="book.cssClass"
           class="hidden"
+          (addToCart)="handleAddToCart(book)"
         ></app-book>
-        <div class="box"></div>
-        <div class="box"></div>
+        <div class="box1">
+          <h2 class="textPrev" *ngIf="book" [innerHTML]="book.preview"></h2>
+        </div>
+        <div class="box2"></div>
       </div>
     </div>
   </body>
