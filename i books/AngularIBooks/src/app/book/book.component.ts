@@ -11,6 +11,7 @@ export class BookComponent {
   @Input() cssClass: string;
   @Input() price: string;
   @Input() preview: string;
+  @Input() preview2: string;
   @Output() imageClick = new EventEmitter<void>();
   @Output() addToCart = new EventEmitter<void>();
 

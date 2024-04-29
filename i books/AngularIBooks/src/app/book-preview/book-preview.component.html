@@ -18,9 +18,15 @@
           (addToCart)="handleAddToCart(book)"
         ></app-book>
         <div class="box1">
-          <h2 class="textPrev" *ngIf="book" [innerHTML]="book.preview"></h2>
+          <h1 class="textPrev1">Preview 1</h1>
+          <br />
+          <h2 class="textPrev2" *ngIf="book" [innerHTML]="book.preview"></h2>
         </div>
-        <div class="box2"></div>
+        <div class="box2">
+          <h1 class="textPrev1">Preview 2</h1>
+          <br />
+          <h2 class="textPrev2" *ngIf="book" [innerHTML]="book.preview2"></h2>
+        </div>
       </div>
     </div>
   </body>

@@ -22,9 +22,13 @@
   padding: 8px;
 }
 
-.textPrev {
+.textPrev1 {
   color: white;
-  font-size: 1.8em;
+}
+
+.textPrev2 {
+  color: white;
+  font-size: 2em;
 }
 
 .Preview .book img {
